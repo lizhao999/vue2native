@@ -1,12 +1,12 @@
-# VUE 与 原生交互（iOS为主）
+# VUE 与 原生交互（iOS）
 
 # iOS环境：
 > wkwebview
 > 加载本地js文件要用fileURLWithPath，并且资源文件要采用folder references
     
-![](media/16270283562860/16270289518664.jpg)
+![image](https://user-images.githubusercontent.com/14989219/126761065-ecdcf4be-d215-4f36-b6a9-fb402e6616b3.png)
 
-![](media/16270283562860/16270287315073.jpg)
+![image](https://user-images.githubusercontent.com/14989219/126761083-c0e678d4-4734-4d4e-8650-f34d1b4582fe.png)
 
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html" inDirectory:@"h5"];
     NSURL *pathURL = [NSURL fileURLWithPath:filePath];
